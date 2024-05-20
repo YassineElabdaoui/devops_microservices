@@ -1,5 +1,5 @@
 FROM openjdk:17-oracle
 VOLUME /tmp
-COPY target/*.jar  app.jar
+COPY target/account-service.jar  account-service
 ENTRYPOINT ["java","-jar", "app.jar"]
 
