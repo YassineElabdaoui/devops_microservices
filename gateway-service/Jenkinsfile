@@ -1,0 +1,10 @@
+@Library('shared-libraries') _
+
+commonPipeline(
+    repoUrl: 'https://github.com/YassineElabdaoui/devops_microservices.git',
+    branch: 'main',
+    serviceDir: 'gateway-service',
+    dockerImage: 'yassine2023/devops-gateway-service',
+    dockerCredentialsId: 'dockerhub-pwd',
+    dockerUsername: 'yassine2023'
+)
